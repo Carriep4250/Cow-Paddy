@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cow Paddy Fundraiser</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Cow Paddy Fundraiser</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Support Our Cause in a Fun and Messy Way!</h2>
+    <p>Buy a square. Wait for the cow. Win big.</p>
+    <button onclick="scrollToContact()">Get Involved</button>
+  </section>
+
+  <section id="about">
+    <h2>About the Fundraiser</h2>
+    <p>This isn’t your ordinary fundraiser! We grid off a pasture, sell squares, and let a cow do its business. Wherever the patty lands, the owner of that square wins a prize!</p>
+  </section>
+
+  <section id="services">
+    <h2>How It Works</h2>
+    <ul>
+      <li>Buy a square for $20</li>
+      <li>We release the cow</li>
+      <li>If the cow drops the patty on your square, you win!</li>
+      <li>All proceeds support [Your Cause Here]</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" placeholder="Your Name" required />
+      <label>Email:</label>
+      <input type="email" placeholder="Your Email" required />
+      <label>Message:</label>
+      <textarea placeholder="Ask us anything..."></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Cow Paddy Fundraiser | All rights reserved</p>
+  </footer>
+
+  <script>
+    function scrollToContact() {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
